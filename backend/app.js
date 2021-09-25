@@ -81,8 +81,6 @@ app.post('/finishLogin', validateJwt, (req, res) => {
         return;
     }
 
-    console.log(successfulLogins);
-
     if(successfulLogins[req.jwt.address]) {
         delete successfulLogins[req.jwt.address];
         delete challenges[req.jwt.address];

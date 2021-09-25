@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-</head>
-
-<body>
-
-    <form id="login-form">
-        <input type="text" placeholder="Ethereum address">
-        <input type="submit" value="Login">
-    </form>
-
-    <div id="login-in-progress" style="display: none">
-        <h3>Send the following text to the login contract using an Ethereum client or wallet and then wait:</h3>
-        <p></p>
-    </div>
-
-    <div id="logged-in" style="display: none">
-        <p id="logged-in-address"></p>
-        <p id="api-test"></p>
-    </div>
-
-    <script src="bundle.js"></script>
-
-</body>
-
+    <body class="bg-secondary" style="background-image: url(./download.jpg); background-size: cover;">
+        <div class="card bg-light" style="padding: 4rem; margin: 6rem !important;">
+            <div class="container-md">
+                <h2 class="text-center">
+                    <u>Ethereum Login Example</u>
+                </h2>
+                
+                <form id="login-form" class="mt-4">
+                    <label for="ethAddress" class="form-label">Ethereum address</label>
+                    <input type="text" class="form-control mb-3" id="ethAddress">
+                    <input type="submit" class="btn btn-primary" style="padding: 1rem 2rem;" value="Login">
+                </form>
+            
+                <div id="login-in-progress" style="display: none" class="mt-4">
+                    <h3>Send the following text to the login contract using an Ethereum client or wallet and then wait:</h3>
+                    <p></p>
+                </div>
+            
+                <div id="logged-in" style="display: none" class="mt-4 p-4 border border-success">
+                    <p id="logged-in-address"></p>
+                    <p id="api-test"></p>
+                </div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
 </html>
 
