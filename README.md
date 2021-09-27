@@ -33,6 +33,13 @@
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ShubhankarKG/EthLogin/issues). You can also take a look at the [contributing guide](./CONTRIBUTING.md).
 
+## Future Plans
+
+1. Accomodate Wallet Account imports.
+2. Persistently store JWT, perhaps on `localStorage`.
+3. Enable refresh token capabilities.
+4. Deploy contract to Ropsten or Rinkeby.
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
